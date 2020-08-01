@@ -8,6 +8,7 @@ body {
 
 .app {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
 }
@@ -26,10 +27,4 @@ body {
 .app__stats {
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 800px) {
-  .app {
-    flex-direction: column;
-  }
 }

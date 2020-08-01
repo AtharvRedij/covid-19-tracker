@@ -9,6 +9,7 @@ import {
 import InfoBox from "./components/InfoBox";
 import Map from "./components/Map";
 import Table from "./components/Table";
+import LineGraph from "./components/LineGraph";
 import { sortData } from "./utils";
 import "./App.css";
 
@@ -104,7 +105,14 @@ function App() {
         <CardContent>
           <h3>Live cases by country</h3>
           <Table countries={tableData} />
-          <h3>Worldwide new cases</h3>
+          <h3
+            style={{
+              margin: "20px 0",
+            }}
+          >
+            Worldwide new cases
+          </h3>
+          <LineGraph casesType="cases" />
         </CardContent>
       </Card>
     </div>
